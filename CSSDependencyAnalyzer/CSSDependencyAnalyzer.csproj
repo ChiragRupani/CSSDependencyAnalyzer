@@ -6,13 +6,18 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>CSS Dependency Analyzer</Title>
-    <Version>1.0.0-alpha</Version>
-    <Copyright>MIT</Copyright>
-    <PackAsTool>true</PackAsTool>
+    <Description>Analyzes React Component files to identify classes used from other styles files for enabling lazy loading</Description>
+    <Summary>Analyzes React Component files to identify classes used from other styles files for enabling lazy loading</Summary>
+    <Version>1.0.0-alpha1</Version>    
+    <Authors>Chirag</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl></PackageProjectUrl>
-    <PackageReleaseNotes>Currently is in alpha - Not ready for general use</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/ChiragRupani/CSSDependencyAnalyzer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ChiragRupani/CSSDependencyAnalyzer</RepositoryUrl>
+    <PackageReleaseNotes>Currently this is in alpha - Not ready for general use</PackageReleaseNotes>
     <PackageTags>css;react;jsx;tsx;scss;analyzer;dependency-analysis;optimization;lazy-loading;performance;.NET-tool</PackageTags>
+    <PackAsTool>true</PackAsTool>   
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
     <!--<PublishAot>true</PublishAot>
@@ -22,9 +27,6 @@
   </PropertyGroup>
 
   <ItemGroup> 
-    <None Update="Readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Update="Readme.md" Pack="true" PackagePath="\" />     
   </ItemGroup>
 </Project>
